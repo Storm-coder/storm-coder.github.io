@@ -1,0 +1,1238 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {           /*сбросить рамку по умолчанию*/
+	border:none;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+body {
+	height: 100%;
+	font-family:'Times New Roman', Times, sans-serif;
+	background: #ffffff;
+}
+
+.main {
+	margin: 0 auto;
+}
+
+.w3c {
+	position: absolute;
+}
+
+
+
+						/*HEAD*/
+
+.head {
+	width: 940px;
+	margin: 0 auto;
+	padding: 10px 0;
+}
+
+.head-logo {
+	float: left;
+	clear: both;
+	margin-left: 5px;
+	margin-top: 30px;
+	line-height: 0;
+}
+
+.menu-wrapper {
+	float: right;
+	margin-top: 35px;
+}
+
+.menu li {
+	float: left;
+}
+
+.menu li a {
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	text-transform: uppercase;
+	line-height: 0;
+	padding: 10px;
+	border-radius: 5px;
+	margin-right: 23px;
+	color: #ffffff;
+}
+
+.menu li:last-child a {
+	margin-right: 0;
+}
+
+.menu li a:hover {
+	transition: 0.3s linear;
+	background: rgba(0, 0, 0, 0.3);
+	color: #fed136;
+}
+
+.wel {
+	font-size: 40px;
+	font-family: Arial, sans-serif;
+	margin-top: 235px;
+	text-align: center;
+	color: #ffffff;
+}
+
+h1 {
+	font-size: 75px;
+	font-family: Arial, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 30px;
+	color: #ffffff;
+}
+
+.btn {
+	text-align: center;
+	margin-top: 10%;
+}
+
+.btn-info {
+	width: 240px;
+	height: 65px;
+	background: rgba(254, 209, 54, 0.7);
+	border: none;
+	border-radius: 5px;
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+	color: #ffffff;
+}
+
+.btn-info:hover {
+	transition: 0.3s linear;
+	background: #d4ad28;
+}
+
+						/* / HEAD*/
+
+
+
+			/*------Стили контента-------*/
+
+.content-main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.article {		/*контент, с фиксированной шириной, центрирован*/
+	margin-bottom: 50px;
+	padding: 10px 0;
+}
+
+.section-header {
+	margin-top: 150px;
+	font-family: Arial, sans-serif;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	color: #222222;
+}
+
+.service-block-header a {
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #222222;
+}
+
+.section-info {
+	font-family:'Times New Roman', Times, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 9px;
+    color: #777777;
+}
+
+			/*------ / Стили контента-------*/
+
+
+						/*SERVICES*/
+
+.service-main .block-row {
+	margin-top: 73px;
+}
+
+.service-block {
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.service-main .section-header {
+	margin-top: 100px;
+}
+
+.service-block .section-info {
+	line-height: 24px;
+	font-size: 18px;
+}
+
+.service-block:last-child {
+	margin-right: 0;
+}
+
+.icon {
+	margin-bottom: 18px;
+}
+						/* / SERVICES*/
+
+
+						/*PORTFOLIO*/
+
+.portfolio {
+	background: #f7f7f7;
+}
+
+.portfolio .section-header {
+	margin-top: 150px;
+}
+
+.portfolio-block {
+	display: inline-block;
+	width: 33%;  /*желательно в % для адаптивности*/
+	margin-top: 75px;
+	text-align: center;
+	background: #ffffff;
+}
+
+.pb {
+	margin-right: 0;
+}
+
+						/* / PORTFOLIO*/
+
+						
+						/*ABOUT*/
+
+.about-block-header:first-child a {
+	text-transform: uppercase;
+}
+
+.about-block-header a {
+	line-height: 30px;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	color: #222222;
+}
+
+.about-info {
+	margin-top: 6px;
+	font-size: 16px;
+	line-height: 26px;
+	color: #777777;
+}
+
+.block-row-about {
+	margin-top: 47px;
+	height: 225px;
+}
+
+.block-row-about:first-of-type {
+	margin-top: 75px;
+}
+
+.about-block-left {
+	float: left;
+	width: 35%;
+	text-align: right;
+}
+
+.about-block-left:last-child {
+	width: 30%;
+	text-align: center;
+}
+
+.img-left {
+	float: left;
+	width: 30%;
+	line-height: 0;
+	text-align: center;
+}
+
+.about-block-right {
+	float: right;
+	width: 35%;
+	text-align: left;
+}
+
+.about-block-right:last-child {
+	width: 26%;
+	text-align: center;
+	line-height: 0;
+}
+
+.img-right {
+	float: right;
+	width: 30%;
+	line-height: 0;
+	text-align: center;
+}
+
+.about-image-btn img {
+	display: inline-block; /*<a>*/
+	border: 6px solid #f1f1f1;
+	border-radius: 50%;
+}
+
+.about-image:after {  /*вертикальная линия*/
+	content: "";
+	display: block;
+	height: 91px;
+	width: 3px;
+	margin: 0 auto; /*выравнивание линии по центру*/
+	background: #f1f1f1;
+}
+
+.circle {
+	display: inline-block;
+	width: 169px;
+	height: 169px;
+	border-radius: 50%;
+	background: #fed136;
+	border: 6px solid #f1f1f1;
+}
+
+.circle .circle-block p {
+	padding: 32px;
+	text-align: center;
+	line-height: 27px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+							/* / ABOUT*/
+
+
+							/* TEAM */							
+
+.team {
+	background: #f9f9f9;
+}
+
+.team-main .block-row {
+	margin-top: 82px;
+}
+
+.team-main .section-header {
+	margin-top: 100px;
+}
+
+.team-main .section-info {
+    margin-top: 16px;
+}
+
+.team-block {
+	float: left;
+	width: 32%; 
+	margin-right: 2%;  
+	text-align: center;
+}
+
+.team-block:last-child {
+	margin-right: 0;
+}
+
+.team-image a {
+	display: inline-block;
+	width: 222px;
+	height: 222px;
+	border-radius: 50%;
+	background: #333333;
+}
+
+.team-block-header {
+	margin-top: 22px;
+}
+
+.team-block-header a {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #222222;
+}
+
+.team-block .section-info {
+	font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+    color: #777777;
+}
+
+	/*Icon-style*/
+.social {
+	display: inline-block;
+	margin-top: 11px;
+}
+
+.ico-list li {
+	float: left;
+}
+
+.ico-list li a {
+	display: inline-block;
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	border: 3px solid #222222;
+	margin-right: 9px;
+}
+
+.ico-list li a:hover {
+	width: 40px;
+	height: 40px;
+	border: none;
+}
+
+.ico-list li:last-child a {
+	margin-right: 0;
+}
+
+.social-tw a {
+	background: #f9f9f9 url("../img/social-tw.png") no-repeat 50% 50%;
+}
+
+.social-tw a:hover {
+	background: #00aced url("../img/social-tw-hv.png") no-repeat 50% 50%;
+}
+
+.social-fb a {
+	background: #f9f9f9 url("../img/social-fb.png") no-repeat 50% 50%;
+}
+
+.social-fb a:hover {
+	background: #3b5998 url("../img/social-fb-hv.png") no-repeat 50% 50%;
+}
+
+.social-p a {
+	background: #f9f9f9 url("../img/social-p.png") no-repeat 50% 50%;
+}
+
+.social-p a:hover {
+	background: #cb2028 url("../img/social-p-hv.png") no-repeat 50% 50%;
+}
+
+.social-google a {
+	background: #f9f9f9 url("../img/social-google.png") no-repeat 50% 50%;
+}
+
+.social-google a:hover {
+	background: #d95232 url("../img/social-google-hv.png") no-repeat 50% 50%;
+}
+	/*Icon-style*/
+
+.team-section-info {
+	width: 57%;
+	font-size: 16px;
+	line-height: 24px;
+    text-align: center;
+    color: #777777;
+	margin: 52px auto 175px auto;
+}
+
+.logos {
+	margin-top: 50px;
+}
+
+.logos-list {
+	display: table;
+	margin: 0 auto;
+}
+
+.logos-list li {
+	float: left;
+}
+
+.logos-list li a {
+	margin-right: 40px;
+}
+
+
+.logos-list li:last-child a {
+	margin-right: 0;
+}
+
+							/* / TEAM */
+
+							/* CONTACT */
+
+.contact {
+	background: #222222 url("../img/map.png")no-repeat 100% 500%;
+	height: 795px;  /*710*/
+	background: url("../img/head.jpg") no-repeat;
+	background-color: #464646;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+.contact .article {
+	margin-bottom: 0;
+}
+
+.contact-main .section-header {
+	margin-top: 93px;
+	color: #ffffff;
+}
+
+.contact-main .section-info {
+	color: #d6d6d6;
+}
+
+.send {
+	margin-top: 78px;
+}
+
+.send .send-left {
+	float: left;
+	width: 457px;
+}
+
+.send .send-right {
+	float: right;
+	width: 457px;
+	line-height: 0;
+}
+
+.send .contact-form {
+	width: 92%;
+	margin-bottom: 30px;
+	padding: 17px;
+	border: none;
+	border-radius: 5px;
+	background: #ffffff;
+	/*стили текста при заполнении формы*/
+	font-family: Arial, sans-serif; 
+	font-size: 14px;
+	color: #222222;
+}
+
+.send .contact-form:last-child {
+	margin-bottom: 0;
+}
+
+.send .btn-info {
+	background: #fed136;
+}
+
+.send .btn-info:hover {
+	transition: 0.3s linear;
+    background: #d4ad28;
+}
+
+					/* плавное изменение прозрачности  placeholder-а при фокусе */
+
+.send .contact-form::-webkit-input-placeholder {  /*Псевдокласс, с помощью которого задаётся стилевое оформление подсказывающего текста созданного атрибутом placeholder*/
+	opacity: 1;
+	transition: opacity 0.3s ease;
+	/*стили текста формы по умолчанию (color: у атрибута placeholder по умолчанию A9A9A9)*/
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+
+.send .contact-form::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: #888888;}
+.send .contact-form:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: #888888;}
+.send .contact-form:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: #888888;}
+/*по наведению*/
+.send .contact-form:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: red;}
+.send .contact-form:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: red;}
+.send .contact-form:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: red;}
+.send .contact-form:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: red;}
+
+					/* / плавное изменение прозрачности  placeholder-а при фокусе */
+
+.send .message-form {
+	width: 92%;
+	height: 176px;
+	margin-left: 3px;
+	padding: 17px;
+	border: none;
+	border-radius: 5px;
+	background: #ffffff;
+	/*стили текста при заполнении поля*/
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #222222;
+	resize: none;  /*убрать стили по умолчанию (черточки) в правом нижнем углу*/
+}
+
+
+					/* плавное изменение прозрачности  placeholder-а при фокусе */
+
+.send .message-form::-webkit-input-placeholder {
+	opacity: 1;
+	transition: opacity 0.3s ease;
+		/*стили текста поля по умолчанию*/
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.send .message-form::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: #888888;}
+.send .message-form:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px;}
+.send .message-form:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: #888888; overflow:  hidden;}
+/*по наведению*/
+.send .message-form:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: red;}
+.send .message-form:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: red;}
+.send .message-form:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; color: red;}
+.send .message-form:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease; text-transform: uppercase; font-family: Arial, sans-serif; font-weight: bold; font-size: 14px; overflow:  hidden; color: red;}
+
+					/* / плавное изменение прозрачности  placeholder-а при фокусе */
+
+.send .btn {
+	margin-top: 10%;
+}
+
+							/* / CONTACT */
+
+
+							/* Copyright */
+
+
+.copy {
+	background: #ffffff;
+	height: 90px;
+}
+
+.copy-info {
+	display: inline-block;
+	margin-right: 330px;
+	margin-top: 33px;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #555555;
+}
+
+.section-wrapper-copy .content-main {
+	height: 90px;
+	position: relative;
+}
+
+.section-wrapper-copy .social-tw a {
+	background: #222222 url("../img/social-tw-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social-tw a:hover {
+	background: #00aced url("../img/social-tw-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social-fb a {
+	background: #222222 url("../img/social-fb-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social-fb a:hover {
+	background: #3b5998 url("../img/social-fb-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social-p a {
+	background: #222222 url("../img/social-p-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social-p a:hover {
+	background: #cb2028 url("../img/social-p-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social-google a {
+	background: #222222 url("../img/social-google-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social-google a:hover {
+	background: #d95232 url("../img/social-google-hv.png") no-repeat 50% 50%;
+}
+
+.section-wrapper-copy .social {
+	position: absolute;
+	width: 100%;
+	margin-top: 21px;
+	text-align: center;
+
+}
+
+.section-wrapper-copy .ico-list {
+	display: inline-flex;
+}
+
+							/* / Copyright */
+
+
+
+
+@media screen and (max-width: 940px) {
+
+.head, .content-main {
+	width: 100%;
+}
+
+.article {
+	margin-bottom: 50px;
+}
+
+			/* Head */
+
+.head .wel {
+	margin-top: 200px;
+}
+
+			/* / Head */
+
+
+	/*Portfolio*/
+
+.portfolio-main {
+	text-align: center;
+}
+
+.portfolio-block {
+	width: 49%;
+}
+
+	/* / Portfolio*/
+
+	/*About*/
+
+.block-row-about .about-block-left {
+	width: 50%;
+	text-align: center;
+	padding: 5px;
+}
+
+.block-row-about .img-left {
+	float: none;
+	width: 49%;
+}
+
+.block-row-about .about-block-right {
+	float: none;
+	width: 50%;
+	padding: 5px;
+	text-align: center;
+}
+
+.block-row-about .img-right {
+	width: 49%;
+	float: none;
+}
+
+.img-screen:after {
+	display: none;
+}
+
+.block-row-about:first-of-type {
+	display: flex;
+}
+
+.block-row-about {
+	display: flex;
+}
+
+.block-row-about:last-child .about-block-left {  /*убрать распорку*/
+	display: none; 
+}
+
+.block-row-about:last-child .img-left {
+	width: 100%;
+}
+
+	/* / About*/
+
+	/*Team*/
+
+.team-section-info {
+	margin-bottom: 70px;
+}
+
+.logos-list {
+	width: 365px;
+}
+
+.logos-list li a {
+	margin: 0;
+	line-height: 40px;
+}
+
+.logos-list li:nth-child(odd) a {
+	margin-right: 20px;
+}
+
+.logos-list li:last-child a {
+	padding-left: 23px;
+}
+
+	/* / Team*/
+
+
+	/*Contact*/
+
+.contact-main {
+	margin-bottom: 70px;
+}
+
+
+.contact-main .section-header {
+	margin-top: 70px;
+}
+
+.send {
+    margin-top: 55px;
+}
+
+.send .send-left {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.send .contact-form {
+	display: block;
+	width: 50%;
+	margin: 0 auto 30px auto;
+}
+
+.send .send-right {
+	float: none;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.send .message-form {
+	display: block;
+	width: 70%;
+	margin-left: 0;
+	margin: 0 auto;
+}
+
+.send .btn {
+	margin-top: 40px;
+}
+
+.contact {
+    height: 875px;  /*////*/
+}
+
+	/*Contact*/
+
+
+		/*Copyright*/
+
+.section-wrapper-copy .content-main {
+	padding-bottom: 25px;
+}
+
+.copy-info {
+	display: block;
+	margin: 0 0 0 0;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.section-wrapper-copy .social {
+	display:block;
+	position: static;
+	padding: 30px 0 10px 0;
+	margin: 0;
+	text-align: center;
+
+}
+
+.ico-list {
+	display: inline-block;
+	line-height: 0;
+}
+
+		/* / Copyright*/
+	}
+
+
+
+
+@media screen and (max-width: 740px) {
+
+			/* Head */
+
+.head-logo {
+	float: none;
+	margin-left: 0;
+	text-align: center;
+}
+
+.menu-wrapper {
+	float: none;
+	overflow: hidden;
+}
+
+.main-menu {
+	text-align: center;
+}
+
+.menu {
+	display: inline-block;
+}
+
+.menu li a {
+	margin-right: 35px;
+}
+
+.head .wel {
+	margin-top: 100px;
+	font-size: 35px;
+}
+
+h1 {
+	font-size: 65px;
+}
+
+			/* Service */
+
+.service-block {
+	float: none;
+	display: inline-block;
+	width: 30%;
+	margin-right: 3%;
+}
+
+.service-main .block-row {
+	text-align: center;
+}
+
+			/* / Service */
+
+			/* Team */
+
+.team-image a {
+	width: 150px;
+	height: 150px;
+}
+
+			/* Team */
+
+	}
+
+
+@media screen and (max-width: 614px) {
+
+.section-header {
+	font-size: 30px;
+}
+
+			/* Head */
+
+.head .wel {
+	font-size: 25px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.menu li a {
+	font-size: 14px;
+    margin-right: 20px;
+}
+
+			/* / Head */
+
+			/* Portfolio */
+
+.port-image img {
+	width: 100%;
+}
+
+.portfolio-block {
+	width: 45%;
+	margin-top: 50px;
+}
+
+.portfolio .section-header {
+	margin-top: 100px;
+}
+
+.portfolio-block:first-of-type {
+	margin-top: 75px;
+}
+
+.portfolio-block:nth-child(odd) {
+	margin-right: 3%;
+}
+
+			/* / Portfolio */
+
+
+			/* About */
+
+.block-row-about .about-block-left {
+	width: 75%;
+}
+
+.block-row-about .about-block-right {
+	width: 75%;
+}
+
+.about-main .section-header {
+	margin-top: 100px;
+}
+
+			/* / About */
+
+.team-main .section-header {
+	margin-top: 100px;
+}
+
+	}
+
+
+
+@media screen and (max-width: 487px) {
+
+p.section-header {
+	margin-top: 55px;
+}
+
+			/* Head */
+
+.menu {
+	display: block;
+	width: 150px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.menu li {
+	float: none;
+	padding: 10px 0;
+}
+
+.menu li a {
+	margin-right: 0;
+}
+
+.head .wel {
+	margin-top: 70px;
+}
+
+.btn-info {
+	width: 50%;
+	font-size: 20px;
+}
+
+			/* / Head */
+
+
+			/* Service */
+
+.service-main .block-row {
+	margin-top: 55px;
+}
+
+.service-block {
+	width: 60%;
+	margin-right: 0;
+	margin-bottom: 50px;
+}
+
+.service-block .section-info {
+	font-size: 16px;
+}
+
+.article {
+	margin-bottom: 0;
+}
+			/* / Service */
+
+
+			/* Portfolio */
+
+.portfolio-block:first-of-type {
+	margin-top: 55px;
+}
+			/* / Portfolio */
+
+
+			/* About */
+
+.about-info {
+	font-size: 14px;
+}
+
+.block-row-about .about-block-left {
+	width: 65%;
+}
+
+.block-row-about .about-block-right {
+	width: 65%;
+}
+
+.block-row-about .img-left {
+	width: 33%;
+}
+
+.block-row-about .img-right {
+	width: 33%;
+}
+
+.about-image-btn img {
+	width: 110px;
+}
+
+.about-image:after {
+	height: 150px;
+}
+
+.circle {
+	width: 110px;
+	height: 110px;
+}
+
+.circle .circle-block p {
+	padding: 14px;
+	line-height: 20px;
+	font-size: 14px;
+}
+			/* / About */	
+
+
+			/* Team */
+
+.team-main .block-row {
+	margin-top: 67px;
+}
+
+.team-main .section-header {
+	margin-top: 50px;
+}
+
+.team-block {
+	margin-right: 0;
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+.team-block:last-child {
+	float: none;
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.logos-list li {
+	float: none;
+	padding-bottom: 5px;
+}
+
+.logos-list {
+	width: 100%;
+	text-align: center;
+}
+
+.logos-list li:nth-child(odd) a {
+    margin-right: 0;
+}
+
+.logos-list li:last-child a {
+    padding-left: 0;
+}
+			/* / Team */
+
+	}
+
+
+@media screen and (max-width: 384px) {
+
+p.section-header {
+    margin-top: 85px;
+}
+
+			/* Portfolio */
+
+.service-block-header a {
+	font-size: 14px;
+}
+ 			/* / Portfolio */
+
+
+			/* About */
+
+.block-row-about:first-of-type {
+	display: table;
+	margin-top: 55px;
+}
+
+.block-row-about {
+	display: table;
+	margin-top: 55px;
+}
+
+.block-row-about .about-block-right {
+	width: 95%;
+	margin-left: 1%;
+	}
+
+.block-row-about .about-block-left {
+	width: 95%;
+	margin-left: 1%;
+	}
+
+.about-image-btn img {
+	margin-bottom: 15px;
+}
+
+.block-row-about .img-left {
+	display: table-header-group;
+	width: 33%;
+	
+}
+
+.block-row-about .img-right {
+	display: table-header-group;
+	width: 33%;
+	
+}
+
+.block-row-about:last-child .img-left {
+	display: inline-block;
+}
+
+.block-row-about:last-of-type {
+	display: block;
+	height: 122px;
+}
+
+.about-image:after {
+	height: 0;
+}
+
+			/* / About */
+
+			/*Team*/
+
+.team-main .section-header {
+	margin-top: 90px;
+}
+
+			/* / Team*/
+
+
+}
