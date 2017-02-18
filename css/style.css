@@ -1223,17 +1223,7 @@ p.section-header {
 .about-image:after {
 	height: 0;
 }
-	
-.circle {
-	position: relative;
-}
 
-.circle .circle-block p {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
 			/* / About */
 
