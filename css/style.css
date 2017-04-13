@@ -91,7 +91,7 @@ body {
 	color: #ffffff;
 }
 
-h1 {
+h1, h2 {
 	font-size: 75px;
 	font-family: Arial, sans-serif;
 	font-weight: normal;
