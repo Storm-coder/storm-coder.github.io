@@ -41,6 +41,7 @@
 				</div>
 				<p class="wel">Welcome To Our Studio!</p>
 				<h1>It’s nice to meet you</h1>
+				<h1 class="time"><!--time here--></h1> <!-- h1 - fix -->
 				<div class="btn">
 					<form action="#" method="post">
 						<input class="btn-info" type="submit" value="tell me more">		
@@ -353,8 +354,28 @@
 
 																			<!-- / CONTENT-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/parallax.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+		<!--Dynamic time-->
+	<script type="text/javascript">
 
+	window.onload = function(){
+	    (function(){
+		var date = new Date();
+		var minutes = date.getMinutes();
+		var seconds = date.getSeconds();
+		    if (seconds < 10) {
+			seconds = "0" + seconds;
+		    }
+		    if (minutes < 10) {
+			minutes = "0" + minutes;
+		    }
+		var time = date.getHours()+':'+minutes+':'+seconds;
+		document.getElementsByClassName('time')[0].innerHTML = time;
+		window.setTimeout(arguments.callee, 1000); // динамика
+	    })();
+	};
+
+	</script>
 </body>
 </html>
