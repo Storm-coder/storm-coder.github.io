@@ -101,6 +101,10 @@ h1 {
 	color: #ffffff;
 }
 
+.time {
+	font-size: 35px;
+}
+
 .btn {
 	text-align: center;
 	margin-top: 10%;
