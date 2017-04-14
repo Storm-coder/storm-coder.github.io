@@ -1043,6 +1043,10 @@ p.section-header {
 .head .wel {
 	margin-top: 70px;
 }
+	
+.time {
+	margin-top: 25px;
+}
 
 .btn-info {
 	width: 50%;
