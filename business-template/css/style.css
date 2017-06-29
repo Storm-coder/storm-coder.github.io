@@ -1,0 +1,210 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                               /* обнуляем отступы и убираем бордюры */
+	vertical-align: baseline;          /* приводим все к одной базовой линии */
+	background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+	font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                      	     /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	outline:none;
+}
+table {						/* устраняем отступы между ячейками таблицы */
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;			/* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+	margin: 0; 				/* убираем отступы по умолчанию для элементов форм (в частности для checkbox и radio) */
+	font-size: 100%; 			/* делаем размер шрифтов везде одинаковым */
+	outline: none;
+}
+
+input[type="checkbox"] { 		/* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+
+html {
+	min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+	color: #000;
+	text-align: left;
+	font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+	min-height:100%;
+	background: #f9f9f9;
+	font-family: 'Open Sans', sans-serif;
+	
+}
+a, a:visited { /* порядок правил для ссылок имеет значение */
+	color: #e6618c;
+	text-decoration: underline;
+}
+a:hover {
+	color: #fdf208;
+	text-decoration:none;
+}
+a:focus, a:active {
+	color: #c83867;
+	text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+	font-weight:normal;
+}
+img{
+
+	max-width:100%;
+}
+.clr{
+	clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+
+/*------------------------мой код----------------------------*/
+
+header {
+	background-image: url(header-bg.jpg);  /*url(images/1Template.jpg)*/
+	color: #fff;
+	text-align: center;
+	padding: 135px; 20px; 90px; 20px;
+	background-size: cover;    /*cover - размер img такой, чтобы его ширина и высота поместились в заданную область*/
+	background-repeat: no-repeat;
+}
+
+header>h1 {
+	font-size: 3.75em;
+	font-family: "Raleway", sans-serif;
+	margin-bottom: 25px; /*нижний отступ от заголовка h3*/ 
+}
+
+header>h3 {              /*стили для h3*/ 
+	font-size: 1.125em;
+	font-style: italic; 
+	margin-bottom: 50px;
+}
+
+header > p {
+  font-size: 0,75em;
+}
+
+.subscribe {
+	background: rgba(0, 0, 0, 0.65);
+	display: table; /*ширина фона background по ширине содержимого (форм отправки)*/
+	padding: 20px; 
+	margin: 0 auto 10px auto; /*сверху - нет отступа, auto - справа и слева выравнивает по центру, снизу отступ 10px*/
+	border-radius: 5px;
+	clear: left;  /*классу задано обтекание. свойство clear: left; отменяет это обтекание для блока subscribe*/
+}
+
+.subscribe input[type="text"], .subscribe input[type="email"] {   /*input[type="text"] который находится внутри класса .subscribe и  input[type="email"] который внутри .subscribe  --> выравниваем их по размеру назначив padding: 0 */
+	border: 0; /*убираю рамку на кнопке, которая осталась после заливки*/
+	width: 320px; /*ширина полей формы*/
+	margin-right: 10px; /*отступ справа -- 10пикс (отступы между кнопками)*/
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	padding: 10px 20px 11px 20px; /*отступы от текста сверху(12), справа(20), снизу(13), слева(20)*/
+	box-sizing: border-box;  /*убирает паддинги (по 20 справа и слева) включенные в общую ширину (320пикс) */
+
+}
+
+.subscribe input{
+	float: left;   /*все инпуты находятся на одной линии (верхней)*/
+	border-radius: 5px;
+}
+
+.subscribe input[type="submit"] {
+background: #ae2c52;
+border: 0; /*убираю рамку на кнопке, которая осталась после заливки*/
+color: #fff; /*цвет текста на кнопке*/
+font-size: 1.25em;
+font-weight: 700;  /*насыщенность шрифта*/
+padding: 10px 35px; /*отступ сверху и снизу - по 10, справа и слева 35----таким образом кнопка стала больше*/
+cursor: pointer; /*по навидении мыши на кнопку меняется курсор*/
+}
+
+article {
+
+max-width: 900px; /*изначально задали значение width: 900px, затем изменили на max-width  (для адаптивности (кроссбраузерности) )*/
+margin: 0 auto; /*центрируем текст*/
+padding: 50px 20px; /*50 справа и снизу  20 - слева и справа*/
+}
+
+article>h1 {
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 25px; /*отступ снизу от заголовка*/
+}
+
+article>p:nth-child(odd) { /*псевдокласс применяет значение только к первому P*/
+margin-bottom: 30px;
+}
+
+.imgleft {
+	float: left;
+	margin: 0 30px 20px 0; /*20px снизу, чтобы текст не обтикал картику снизу*/
+}
+@media screen and (max-width: 1162px) {   /*до максимальной ширины в 1162px (наприме на телефоне) для класса (поля ввода) .subscribe input ширина 170 px */
+
+	.subscribe input[type="text"], .subscribe input[type="email"] {
+		width: 170px;
+	}
+}
+
+@media screen and (max-width: 862px) {  /*до максимальной ширины в 862px (наприме на телефоне) для класса (поля ввода) .subscribe input ширина 190 px */
+	.subscribe input[type="text"], .subscribe input[type="email"] {
+		width: 190px;
+		display: block; /*переведет поля в блочный элемент и они будут располагаться друг под другом*/
+		float: none; /*отменит обтекание назначенное выше (.subscribe input {float: left}) для тогочтобы поля были друг под другом*/
+		margin-bottom: 10px;  /*нижний отступ между полями ввода*/
+		margin-right: 0; /*отменяет отступи справа (когда поля при нормальной ширине расположены вряд - для них задан margin-right: 10px)*/
+	}
+	header {
+		padding: 30px 20px; /*назначенние выше паддинги в header были padding: 135px; 20px; 90px; 20px;---меняем на 30 сверху и 20 снизу*/
+	}
+
+	/*меняю размер заголовков h1 h3 и отступы между ними*/
+
+	header>h1 {
+		font-size: 1.75em;
+		margin-bottom: 20px; /*нижний отступ от заголовка h3*/ 
+}
+
+	header>h3 {              
+		margin-bottom: 30px;
+	}
+}
