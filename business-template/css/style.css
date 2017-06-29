@@ -98,7 +98,7 @@ img{
 /*------------------------мой код----------------------------*/
 
 header {
-	background-image: url(header-bg.jpg);  /*url(images/1Template.jpg)*/
+	background-image: url(img/header-bg.jpg);  /*url(images/1Template.jpg)*/
 	color: #fff;
 	text-align: center;
 	padding: 135px; 20px; 90px; 20px;
